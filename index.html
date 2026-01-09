@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cy"> <!-- "cy" for Welsh -->
+<html lang="en"> <!-- "cy" for Welsh -->
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -114,9 +114,76 @@
         </div>
       </nav>
     </header>
-
     <main>
+      <div>
+        <div class="hero">
+          <h1>
+            <t-lang en>Welcome to <strong>SCWonline</strong></t-lang>
+            <t-lang cy>Croeso i <strong>SCWonline</strong></t-lang>
+          </h1>
+          <p>
+            <t-lang en>SCWonline is where you can apply to register and manage your registrations using a phone, PC or tablet. Employers, known to us as signatories, also use the site.</t-lang>
+            <t-lang cy>SCWonline yw lle gallwch wneud cais i gofrestru a rheoli eich cofrestriadau gan ddefnyddio ffôn, cyfrifiadur personol neu dabled. Mae cyflogwyr, a elwir gennym ni yn llofnodwyr, hefyd yn defnyddio'r wefan.</t-lang>
+          </p>
+          <p>
+            <t-lang en>Once you have submitted an application to register or renew your registration, if there is any missing information, we will contact you by email. Please check your emails regularly, including your Junk Spam folders.</t-lang>
+            <t-lang cy>Unwaith y byddwch wedi cyflwyno cais i gofrestru neu adnewyddu eich cofrestriad, os oes unrhyw wybodaeth ar goll, byddwn yn cysylltu â chi drwy e-bost. Gwiriwch eich negeseuon e-bost yn rheolaidd, gan gynnwys eich ffolderi Sbam a Sothach.</t-lang>
+          </p>
+          <ul>
+            <li>
+              <t-lang en>Register as a social care worker</t-lang>
+              <t-lang cy>Cofrestru fel gweithiwr gofal cymdeithasol</t-lang>
+            </li>
+            <li>
+              <t-lang en>Apply for signatory</t-lang>
+              <t-lang cy>Gwnewch gais am lofnodwr</t-lang>
+            </li>
+            <li>
+              <t-lang en>Manage your SCW account online</t-lang>
+              <t-lang cy>Rheoli eich cyfrif SCW ar-lein</t-lang>
+            </li>
+            <li>
+              <t-lang en>Start or further your career in social care</t-lang>
+              <t-lang cy>Dechreuwch neu ymestynnwch eich gyrfa mewn gofal cymdeithasol</t-lang>
+            </li>
+          </ul>
+        </div>
+        <div id="form-container">
+          <h2>
+            <t-lang en>Sign up to SCWonline</t-lang>
+            <t-lang cy>Cofrestrwch i SCWonline</t-lang>
+          </h2>
+          <p>
+            <t-lang en>Please create your account</t-lang>
+            <t-lang cy>Crëwch eich cyfrif</t-lang>
+          </p>
+          <form action="#">
+            <div class="form-input">
+              <label>
+                <select name="title" id="title-select">
+                  <option value="" data-lang-en="Select your title" data-lang-cy="Dewiswch eich teitl">
+                    Select your title
+                  </option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Mx">Mx</option>
+                  <option value="Master" data-lang-en="Master" data-lang-cy="Meistr">
+                    Master
+                  </option>
+                </select>
+                <span class="placeholder">
+                  <t-lang en>Title</t-lang>
+                  <t-lang cy>Teitl</t-lang>
+                </span>
+              </label>
+            </div>
 
+
+          </form>
+        </div>
+      </div>
     </main>
     <script src="js/script.js"></script>
     <script type="module" src="components/t-lang.js"></script>

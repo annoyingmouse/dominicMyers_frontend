@@ -3,6 +3,8 @@
   --header-colour: #FFFFFF;
   --accessibility-bg-colour: #37394B;
   --main-bg-colour: #247C86;
+  --form-bg-colour: #FFFFFF;
+  --form-colour: #1A1A1A;
 }
 html {
   box-sizing: border-box;
@@ -32,6 +34,9 @@ img {
 
 body{
   font-family: Gibson, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   header {
     display: flex;
     flex-direction: column;
@@ -108,15 +113,17 @@ body{
         display: flex;
         flex-direction: row;
         ul {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-gap: 1rem;
+          display: flex;
+          flex-direction: row;
           align-items: center;
           font-size: 0.9rem;
           li {
             display: flex;
             flex-direction: row;
             align-items: center;
+            &:not(:last-child) {
+              margin: 0 1.5rem 0 0;
+            }
             a {
               display: flex;
               flex-direction: row;
@@ -176,7 +183,77 @@ body{
     }
   }
   main {
+    flex: 1;
+    background-color: var(--main-bg-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--header-colour);
+    padding: 3rem 0 0 0;
+    > div {
+      max-width: 1024px;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      .hero {
+        h1 {
+          font-size: 3.5rem;
+          margin: 0 0 2rem 0;
+        }
+        p {
+          margin: 0 0 1rem 0;
+        }
+        ul {
+          li {
+            padding: 0.75rem 0 0.75rem 3rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: url(data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M18%2033C26.2843%2033%2033%2026.2843%2033%2018C33%209.71573%2026.2843%203%2018%203C9.71573%203%203%209.71573%203%2018C3%2026.2843%209.71573%2033%2018%2033ZM25.5001%2015.6213C26.0859%2015.0355%2026.0859%2014.0858%2025.5001%2013.5C24.9144%2012.9142%2023.9646%2012.9142%2023.3788%2013.5L15.5242%2021.3546L12.0784%2017.3345C11.5392%2016.7055%2010.5923%2016.6326%209.96329%2017.1718C9.3343%2017.7109%209.26146%2018.6578%209.8006%2019.2868L14.3006%2024.5368C14.5725%2024.8541%2014.9644%2025.0435%2015.3819%2025.0595C15.7994%2025.0756%2016.2047%2024.9167%2016.5001%2024.6213L25.5001%2015.6213Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E) no-repeat left center;
+          }
+        }
+      }
+      #form-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: var(--form-bg-colour);
+        color: var(--form-colour);
+        border-radius: 1rem;
+      }
+    }
+  }
+}
 
+@media only screen and (max-width: 1440px) {
+  body {
+    header {
+      nav {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    header {
+      nav {
+        div {
+          flex-direction: column;
+          ul {
+            margin: 0.5rem 0 0 0;
+          }
+          form {
+            label {
+              width: 100%;
+              > input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -185,6 +262,21 @@ body{
     header {
       #accessibility_options {
         flex-direction: column;
+      }
+      nav {
+        div {
+          flex-direction: column;
+          ul {
+            margin: 0.5rem 0 0 0;
+            flex-direction: column;
+            li {
+              &:not(:last-child) {
+                margin: 0 0 0.5rem 0;
+              }
+              margin: 0 0 0.5rem 0;
+            }
+          }
+        }
       }
     }
   }
