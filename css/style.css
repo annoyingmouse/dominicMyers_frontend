@@ -5,6 +5,8 @@
   --main-bg-colour: #247C86;
   --form-bg-colour: #FFFFFF;
   --form-colour: #1A1A1A;
+  --input-bg-colour: #EEEEEE;
+  --input-bottom-border: #DDDDDD;
 }
 html {
   box-sizing: border-box;
@@ -219,6 +221,12 @@ body{
         background-color: var(--form-bg-colour);
         color: var(--form-colour);
         border-radius: 1rem;
+        h2 {
+          margin: 0 0 1rem 0;
+        }
+        p {
+          margin: 0 0 1.5rem 0;
+        }
       }
     }
   }
@@ -252,6 +260,12 @@ body{
             }
           }
         }
+      }
+    }
+    main {
+      > div {
+        grid-template-columns: 1fr;
+        max-width: 600px;
       }
     }
   }
@@ -295,5 +309,24 @@ body{
         }
       }
     }
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.25rem 0;
+  background-color: var(--input-bg-colour);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--input-bottom-border);
+  font-size: 1rem;
+  label {
+    font-size: 0.6rem;
+    margin: 0 0 0.5rem 0;
+  }
+  input, select {
+    border: none;
+    background-color: var(--input-bg-colour);
   }
 }
