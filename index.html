@@ -19,13 +19,19 @@
             <t-lang en>Accessibility on our website</t-lang>
             <t-lang cy>Hygyrchedd ar ein gwefan</t-lang>
           </a>
-          <div>
+          <button id="size_changer" data-size="default">
             <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.97529 3.1475L0 12.59H1.92055L2.4794 10.6936H5.29727L5.85612 12.59H7.87113L4.89584 3.1475H2.97529ZM2.90445 8.97038L3.88834 5.57894L4.87223 8.97038H2.90445ZM11.0196 2.36063H9.44535V3.93438H8.65824V2.36063H7.08401V1.57375H8.65824V0H9.44535V1.57375H11.0196V2.36063Z" fill="white"/>
             </svg>
-            <t-lang en>Increase text size</t-lang>
-            <t-lang cy>Cynyddu maint y testun</t-lang>
-          </div>
+            <span data-size="default">
+              <t-lang en>Increase text size</t-lang>
+              <t-lang cy>Cynyddu maint y testun</t-lang>
+            </span>
+            <span data-size="enlarged" style="display: none">
+              <t-lang en>Decrease text size</t-lang>
+              <t-lang cy>Lleihau maint testun</t-lang>
+            </span>
+          </button>
         </div>
         <div id="language_switcher">
           <button class="active" lang="en">
@@ -244,13 +250,25 @@
               </label>
               <input id="password" name="password" type="password">
             </div>
-
+            <button type="submit">
+              <t-lang en>Sign up</t-lang>
+              <t-lang cy>Cofrestrwch</t-lang>
+            </button>
           </form>
+          <div id="alternative">
+            <p>
+              <t-lang en>Already signed up?</t-lang>
+              <t-lang cy>Eisoes wedi cofrestru?</t-lang>
+            </p>
+            <a href="#">
+              <t-lang en>Login here</t-lang>
+              <t-lang cy>Mewngofnodwch yma</t-lang>
+            </a>
+          </div>
         </div>
       </div>
     </main>
     <script src="js/script.js"></script>
     <script type="module" src="components/t-lang.js"></script>
   </body>
-
 </html>
