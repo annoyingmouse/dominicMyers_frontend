@@ -217,6 +217,7 @@ html {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 1fr 1fr;
+        z-index: 1;
         .hero {
           h1 {
             font-size: 3.5rem;
