@@ -4,6 +4,7 @@
   const searchInput = document.getElementById("search-input")
   const formOptions = document.querySelectorAll("form option");
   const sizeChanger = document.getElementById("size_changer");
+  const titleElement = document.getElementsByTagName("title")[0];
   sizeChanger.addEventListener("click", (e) => {
     if(sizeChanger.dataset.size === "default") {
       sizeChanger.dataset.size = "enlarged"
@@ -27,6 +28,7 @@
         option.textContent = option.dataset.langEn;
       }
     })
+    document.title = titleElement.dataset.langEn;
   }
   if (document.documentElement.lang === "cy") {
     searchInput.placeholder = "Chwiliwch"
@@ -35,6 +37,7 @@
         option.textContent = option.dataset.langCy;
       }
     })
+    document.title = titleElement.dataset.langCy;
   }
   switchers.forEach((switcher) => {
     switcher.onclick = () => {
@@ -51,6 +54,7 @@
               option.textContent = option.dataset.langEn;
             }
           })
+          document.title = titleElement.dataset.langEn;
         }
         if(lang === "cy"){
           searchInput.placeholder = "Chwiliwch"
@@ -59,13 +63,9 @@
               option.textContent = option.dataset.langCy;
             }
           })
+          document.title = titleElement.dataset.langCy;
         }
       }
     }
   })
-
-  // console.log(html)
-  // html.style.fontSize = "150%"
-  // console.log(html.style.fontSize)
-
 })()

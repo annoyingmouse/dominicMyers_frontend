@@ -8,6 +8,7 @@
   --input-bg-colour: #EEEEEE;
   --input-bottom-border: #DDDDDD;
   --button-bg-colour: #006252;
+  --input-invalid-colour: #FF0000;
 }
 html {
   box-sizing: border-box;
@@ -288,6 +289,7 @@ html {
         left: 296px;
         position: absolute;
         z-index: 0;
+        pointer-events: none;
       }
     }
   }
