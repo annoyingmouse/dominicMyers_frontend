@@ -10,6 +10,138 @@
   --button-bg-colour: #006252;
   --input-invalid-colour: #FF0000;
 }
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson Book';
+  src: url('typeface/FONTSPRINGDEMO-GibsonBookRegular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonBoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson Book';
+  src: url('typeface/FONTSPRINGDEMO-GibsonBookItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonHeavyItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonLightLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonThinRegular.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Gibson';
+  src: url('typeface/FONTSPRINGDEMO-GibsonSemiboldRegular.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -38,7 +170,7 @@ img {
 html {
   font-size: 100%;
   body{
-    font-family: Gibson, Arial, Helvetica, sans-serif;
+    font-family: 'FONTSPRING DEMO - Gibson', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -398,7 +530,7 @@ html {
   border-bottom: 2px solid var(--input-bottom-border);
   font-size: 1rem;
   label {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     margin: 0 0 0.5rem 0;
   }
   input, select {
