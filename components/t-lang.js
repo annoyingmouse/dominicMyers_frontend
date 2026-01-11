@@ -12,13 +12,15 @@ class TLang extends HTMLElement {
   render() {
     if (document.documentElement.lang.length > 0) {
       if (
-        !this.attributes.hasOwnProperty(
+        this.attributes.hasOwnProperty(
           document.documentElement.lang.toLowerCase(),
         )
       ) {
-        this.style.setProperty("display", "none");
-      } else {
         this.style.setProperty("display", "inline");
+        this.setAttribute("aria-hidden", "false");
+      } else {
+        this.style.setProperty("display", "none");
+        this.setAttribute("aria-hidden", "true");
       }
     }
   }

@@ -152,19 +152,25 @@
             <t-lang en>Accessibility on our website</t-lang>
             <t-lang cy>Hygyrchedd ar ein gwefan</t-lang>
           </a>
-          <button id="size_changer" data-size="default">
+          <button
+            id="size_changer"
+            data-size="default"
+            aria-label="Adjust text size"
+          >
             <svg
               width="12"
               height="13"
               viewBox="0 0 12 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 d="M2.97529 3.1475L0 12.59H1.92055L2.4794 10.6936H5.29727L5.85612 12.59H7.87113L4.89584 3.1475H2.97529ZM2.90445 8.97038L3.88834 5.57894L4.87223 8.97038H2.90445ZM11.0196 2.36063H9.44535V3.93438H8.65824V2.36063H7.08401V1.57375H8.65824V0H9.44535V1.57375H11.0196V2.36063Z"
                 fill="white"
               />
             </svg>
+            <span class="sr-only"> Toggle increased text size </span>
             <span data-size="default">
               <t-lang en>Increase text size</t-lang>
               <t-lang cy>Cynyddu maint y testun</t-lang>
@@ -290,6 +296,7 @@
           </ul>
           <form>
             <label class="search-label">
+              <span class="sr-only">Search</span>
               <svg
                 width="15"
                 height="15"
@@ -303,7 +310,13 @@
                   fill="white"
                 />
               </svg>
-              <input type="text" placeholder="Search" id="search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                id="search-input"
+                data-placeholder-lang-en="Search"
+                data-placeholder-lang-cy="Chwiliwch"
+              >
             </label>
           </form>
           <button>
@@ -427,6 +440,8 @@
                 name="forename"
                 type="text"
                 placeholder="Enter your forename(s)"
+                data-placeholder-lang-en="Enter your forename(s)"
+                data-placeholder-lang-cy="Rhowch eich enw(au) cyntaf"
                 required
               >
             </div>
@@ -440,6 +455,8 @@
                 name="surname"
                 type="text"
                 placeholder="Enter your surname"
+                data-placeholder-lang-en="Enter your surname"
+                data-placeholder-lang-cy="Rhowch eich cyfenw"
                 required
               >
             </div>
@@ -453,6 +470,8 @@
                 name="email"
                 type="email"
                 placeholder="Enter your email address"
+                data-placeholder-lang-en="Enter your email address"
+                data-placeholder-lang-cy="Rhowch eich cyfeiriad e-bost"
                 required
               >
             </div>
@@ -466,6 +485,8 @@
                 name="mobile"
                 type="text"
                 placeholder="Enter your mobile number"
+                data-placeholder-lang-en="Enter your mobile number"
+                data-placeholder-lang-cy="Rhowch eich rhif ffôn symudol"
                 required
               >
             </div>

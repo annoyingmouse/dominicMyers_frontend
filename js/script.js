@@ -1,71 +1,56 @@
 (() => {
-  const html = document.querySelector("html");
+  const html = document.documentElement;
   const switchers = document.querySelectorAll("#language_switcher > button");
-  const searchInput = document.getElementById("search-input");
+  const inputs = document.querySelectorAll("input");
   const formOptions = document.querySelectorAll("form option");
   const sizeChanger = document.getElementById("size_changer");
   const titleElement = document.getElementsByTagName("title")[0];
-  sizeChanger.addEventListener("click", (e) => {
-    if (sizeChanger.dataset.size === "default") {
-      sizeChanger.dataset.size = "enlarged";
-      html.style.fontSize = "150%";
-    } else {
-      sizeChanger.dataset.size = "default";
-      html.style.fontSize = "100%";
-    }
+
+  const updateLanguage = (lang) => {
+    const langKey = lang.charAt(0).toUpperCase() + lang.slice(1); // 'en' -> 'En', 'cy' -> 'Cy'
+
+    // Update Placeholders
+    inputs.forEach((input) => {
+      const placeholderText = input.dataset[`placeholderLang${langKey}`];
+      if (placeholderText) input.placeholder = placeholderText;
+    });
+
+    // Update Form Options via dataset (e.g., langEn or langCy)
+    formOptions.forEach((option) => {
+      const text = option.dataset[`lang${langKey}`];
+      if (text) option.textContent = text;
+    });
+
+    // Update Document Title
+    const titleText = titleElement.dataset[`lang${langKey}`];
+    if (titleText) document.title = titleText;
+  };
+
+  sizeChanger.addEventListener("click", () => {
+    const isDefault = sizeChanger.dataset.size === "default";
+    const newSize = isDefault ? "enlarged" : "default";
+
+    sizeChanger.dataset.size = newSize;
+    html.style.fontSize = isDefault ? "150%" : "100%";
+
     sizeChanger.querySelectorAll("span").forEach((el) => {
-      if (sizeChanger.dataset.size === el.dataset.size) {
-        el.style.display = "unset";
-      } else {
-        el.style.display = "none";
-      }
+      el.style.display = el.dataset.size === newSize ? "unset" : "none";
     });
   });
-  if (document.documentElement.lang === "en") {
-    searchInput.placeholder = "Search";
-    formOptions.forEach((option) => {
-      if (option.dataset.langEn) {
-        option.textContent = option.dataset.langEn;
-      }
-    });
-    document.title = titleElement.dataset.langEn;
-  }
-  if (document.documentElement.lang === "cy") {
-    searchInput.placeholder = "Chwiliwch";
-    formOptions.forEach((option) => {
-      if (option.dataset.langCy) {
-        option.textContent = option.dataset.langCy;
-      }
-    });
-    document.title = titleElement.dataset.langCy;
-  }
+
   switchers.forEach((switcher) => {
     switcher.onclick = () => {
+      const lang = switcher.getAttribute("lang");
+      if (!lang) return;
+
       switchers.forEach((el) => el.classList.remove("active"));
       switcher.classList.add("active");
-      if (switcher.hasAttribute("lang")) {
-        const lang = switcher.getAttribute("lang");
-        document.documentElement.lang = lang;
-        document.body.dispatchEvent(new CustomEvent("lang-change"));
-        if (lang === "en") {
-          searchInput.placeholder = "Search";
-          formOptions.forEach((option) => {
-            if (option.dataset.langEn) {
-              option.textContent = option.dataset.langEn;
-            }
-          });
-          document.title = titleElement.dataset.langEn;
-        }
-        if (lang === "cy") {
-          searchInput.placeholder = "Chwiliwch";
-          formOptions.forEach((option) => {
-            if (option.dataset.langCy) {
-              option.textContent = option.dataset.langCy;
-            }
-          });
-          document.title = titleElement.dataset.langCy;
-        }
-      }
+
+      html.lang = lang;
+      updateLanguage(lang);
+      document.body.dispatchEvent(new CustomEvent("lang-change"));
     };
   });
+
+  updateLanguage(html.lang || "en");
 })();
