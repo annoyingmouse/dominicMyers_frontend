@@ -29,9 +29,9 @@
     max: "Gwerth mwyaf y maes hwn yw ${1}",
     pattern: "Cydweddwch y fformat gofynnol",
     equals: "Nid yw'r ddau faes yn cyfateb",
-    default: "Rhowch y gwerth cywir"
-  })
-  Pristine.setLocale("en")
+    default: "Rhowch y gwerth cywir",
+  });
+  Pristine.setLocale("en");
   const pristine = new Pristine(formElement, {
     classTo: "form-group",
     errorClass: "has-danger",
@@ -45,20 +45,27 @@
     (value) => {
       if (value) {
         const today = Temporal.Now.plainDateISO();
-        const dob = Temporal.PlainDate.from(value)
+        const dob = Temporal.PlainDate.from(value);
         const age = today.since(dob, { largestUnit: "years" }).years;
-        return age >=18 && age <= 67;
+        return age >= 18 && age <= 67;
       }
     },
-    () => html.lang === "en" ? "Age must be between 18 and 67": "Rhaid i'r oedran fod rhwng 18 a 67"
+    () =>
+      html.lang === "en"
+        ? "Age must be between 18 and 67"
+        : "Rhaid i'r oedran fod rhwng 18 a 67",
   );
   formElement.addEventListener("submit", (e) => {
-    e.preventDefault()
+    e.preventDefault();
     let valid = pristine.validate();
     if (!valid) {
-      console.warn(html.lang === "en" ? "There are invalid entries in the form.": "Mae cofnodion annilys yn y ffurflen." )
+      console.warn(
+        html.lang === "en"
+          ? "There are invalid entries in the form."
+          : "Mae cofnodion annilys yn y ffurflen.",
+      );
     }
-  })
+  });
   // LANGUAGE
   const updateLanguage = (lang) => {
     const langKey = lang.charAt(0).toUpperCase() + lang.slice(1); // 'en' -> 'En', 'cy' -> 'Cy'
@@ -73,7 +80,7 @@
       switchers.forEach((el) => el.classList.remove("active"));
       switcher.classList.add("active");
       html.lang = lang;
-      Pristine.setLocale(lang)
+      Pristine.setLocale(lang);
       updateLanguage(lang);
       document.body.dispatchEvent(new CustomEvent("lang-change"));
     };

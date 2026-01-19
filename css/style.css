@@ -86,7 +86,8 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("../typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2")
+    format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -94,7 +95,8 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2")
+    format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -110,7 +112,8 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2")
+    format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -118,7 +121,8 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("../typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2")
+    format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -126,7 +130,8 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("../typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2")
+    format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
