@@ -9,27 +9,13 @@
   sizeChanger.addEventListener("click", () => {
     const isDefault = sizeChanger.dataset.size === "default";
     const newSize = isDefault ? "enlarged" : "default";
-
     sizeChanger.dataset.size = newSize;
     html.style.fontSize = isDefault ? "150%" : "100%";
-
-    sizeChanger.querySelectorAll("> span").forEach((el) => {
+    sizeChanger.querySelectorAll(".sizeChanger").forEach((el) => {
       el.style.display = el.dataset.size === newSize ? "unset" : "none";
     });
   });
   // FORM
-  // const defaultConfig = {
-  //   // class of the parent element where the error/success class is added
-  //   classTo: "form-group",
-  //   errorClass: "has-danger",
-  //   successClass: "has-success",
-  //   // class of the parent element where error text element is appended
-  //   errorTextParent: "form-group",
-  //   // type of element to create for the error text
-  //   errorTextTag: "div",
-  //   // class of the error text element
-  //   errorTextClass: "text-help",
-  // };
   Pristine.addMessages("cy", {
     required: "Mae angen y maes hwn",
     email: "Mae angen cyfeiriad e-bost dilys ar y maes hwn",
@@ -93,5 +79,4 @@
     };
   });
   updateLanguage(html.lang || "en");
-
 })();
