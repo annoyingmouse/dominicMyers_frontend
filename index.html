@@ -8,7 +8,8 @@
     >
       Social Care Wales | Welcome to SCWonline
     </title>
-    <meta name="author" content="Dmoinic Myers">
+    <meta name="author" content="Dominic Myers">
+    <script src="//unpkg.com/@ungap/custom-elements"></script>
     <meta name="description" content="Social Care Wales | Welcome to SCWonline">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
@@ -150,8 +151,13 @@
                 fill="white"
               />
             </svg>
-            <t-lang en>Accessibility on our website</t-lang>
-            <t-lang cy>Hygyrchedd ar ein gwefan</t-lang>
+            <span
+              is="t-span"
+              data-en="Accessibility on our website"
+              data-cy="Hygyrchedd ar ein gwefan"
+            >
+              Accessibility on our website
+            </span>
           </a>
           <button
             id="size_changer"
@@ -173,23 +179,31 @@
             </svg>
             <span class="sr-only"> Toggle increased text size </span>
             <span data-size="default">
-              <t-lang en>Increase text size</t-lang>
-              <t-lang cy>Cynyddu maint y testun</t-lang>
+              <span
+                is="t-span"
+                data-en="Increase text size"
+                data-cy="Cynyddu maint y testun"
+              >
+                Increase text size
+              </span>
             </span>
             <span data-size="enlarged" style="display: none">
-              <t-lang en>Decrease text size</t-lang>
-              <t-lang cy>Lleihau maint testun</t-lang>
+              <span
+                is="t-span"
+                data-en="Decrease text size"
+                data-cy="Lleihau maint testun"
+              >
+                Decrease text size
+              </span>
             </span>
           </button>
         </div>
         <div id="language_switcher">
           <button class="active" lang="en">
-            <t-lang en>English</t-lang>
-            <t-lang cy>Saesneg</t-lang>
+            <span is="t-span" data-en="English" data-cy="Saesneg">English</span>
           </button>
           <button lang="cy">
-            <t-lang en>Welsh</t-lang>
-            <t-lang cy>Cymraeg</t-lang>
+            <span is="t-span" data-en="Welsh" data-cy="Cymraeg">Welsh</span>
           </button>
         </div>
       </div>
@@ -229,8 +243,7 @@
                   fill="white"
                 />
               </svg>
-              <t-lang en>Home</t-lang>
-              <t-lang cy>Cartref</t-lang>
+              <span is="t-span" data-en="Home" data-cy="Cartref">Home</span>
             </a></li>
             <li><a href="#">
               <svg
@@ -246,8 +259,9 @@
                   fill="white"
                 />
               </svg>
-              <t-lang en>Who we are</t-lang>
-              <t-lang cy>Pwy ydym ni</t-lang>
+              <span is="t-span" data-en="Who we are" data-cy="Pwy ydym ni"
+                >Who we are</span
+              >
             </a></li>
             <li><a href="#">
               <svg
@@ -263,8 +277,9 @@
                   fill="white"
                 />
               </svg>
-              <t-lang en>What we do</t-lang>
-              <t-lang cy>Yr hyn a wnawn</t-lang>
+              <span is="t-span" data-en="What we do" data-cy="Yr hyn a wnawn"
+                >What we do</span
+              >
             </a></li>
             <li><a href="#">
               <svg
@@ -280,8 +295,12 @@
                   fill="white"
                 />
               </svg>
-              <t-lang en>How to register</t-lang>
-              <t-lang cy>Sut i gofrestru</t-lang>
+              <span
+                is="t-span"
+                data-en="How to register"
+                data-cy="Sut i gofrestru"
+                >How to register</span
+              >
             </a></li>
             <li><a href="#">
               <svg
@@ -297,8 +316,9 @@
                   fill="white"
                 />
               </svg>
-              <t-lang en>Careers</t-lang>
-              <t-lang cy>Gyrfaoedd</t-lang>
+              <span is="t-span" data-en="Careers" data-cy="Gyrfaoedd"
+                >Careers</span
+              >
             </a></li>
           </ul>
           <form>
@@ -322,8 +342,10 @@
                 type="text"
                 placeholder="Search"
                 id="search-input"
-                data-placeholder-lang-en="Search"
-                data-placeholder-lang-cy="Chwiliwch"
+                is="t-input"
+                placeholder="Search"
+                data-en="Search"
+                data-cy="Chwiliwch"
               >
             </label>
           </form>
@@ -341,8 +363,12 @@
                 fill="white"
               />
             </svg>
-            <t-lang en>Sign up / Login</t-lang>
-            <t-lang cy>Cofrestrwch / Mewngofnodi</t-lang>
+            <span
+              is="t-span"
+              data-en="Sign up / Login"
+              data-cy="Cofrestrwch / Mewngofnodi"
+              >Sign up / Login</span
+            >
           </button>
         </div>
       </nav>
@@ -351,77 +377,102 @@
       <div>
         <section class="hero">
           <h1>
-            <t-lang en>Welcome to <strong>SCWonline</strong></t-lang>
-            <t-lang cy>Croeso i <strong>SCWonline</strong></t-lang>
+            <span is="t-span" data-en="Welcome to " data-cy="Croeso i"
+              >Welcome to</span
+            >
+            <strong>SCWonline</strong>
           </h1>
-          <p>
-            <t-lang en>
-              SCWonline is where you can apply to register and manage your
+          <p><span
+            is="t-span"
+            data-en="SCWonline is where you can apply to register and manage your
               registrations using a phone, PC or tablet. Employers, known to us
-              as signatories, also use the site.
-            </t-lang>
-            <t-lang cy>
-              SCWonline yw lle gallwch wneud cais i gofrestru a rheoli eich
+              as signatories, also use the site."
+            data-cy="SCWonline yw lle gallwch wneud cais i gofrestru a rheoli eich
               cofrestriadau gan ddefnyddio ffôn, cyfrifiadur personol neu
               dabled. Mae cyflogwyr, a elwir gennym ni yn llofnodwyr, hefyd yn
-              defnyddio'r wefan.
-            </t-lang>
-          </p>
-          <p>
-            <t-lang en>
-              Once you have submitted an application to register or renew your
+              defnyddio'r wefan."
+            >SCWonline is where you can apply to register and manage your
+            registrations using a phone, PC or tablet. Employers, known to us as
+            signatories, also use the site.</span
+          ></p>
+          <p><span
+            is="t-span"
+            data-en="Once you have submitted an application to register or renew your
               registration, if there is any missing information, we will contact
               you by email. Please check your emails regularly, including your
-              Junk Spam folders.
-            </t-lang>
-            <t-lang cy>
-              Unwaith y byddwch wedi cyflwyno cais i gofrestru neu adnewyddu
+              Junk Spam folders."
+            data-cy="Unwaith y byddwch wedi cyflwyno cais i gofrestru neu adnewyddu
               eich cofrestriad, os oes unrhyw wybodaeth ar goll, byddwn yn
               cysylltu â chi drwy e-bost. Gwiriwch eich negeseuon e-bost yn
-              rheolaidd, gan gynnwys eich ffolderi Sbam a Sothach.
-            </t-lang>
-          </p>
+              rheolaidd, gan gynnwys eich ffolderi Sbam a Sothach."
+            >Once you have submitted an application to register or renew your
+            registration, if there is any missing information, we will contact
+            you by email. Please check your emails regularly, including your
+            Junk Spam folders.</span
+          ></p>
           <ul>
             <li>
-              <t-lang en>Register as a social care worker</t-lang>
-              <t-lang cy>Cofrestru fel gweithiwr gofal cymdeithasol</t-lang>
+              <span
+                is="t-span"
+                data-en="Register as a social care worker"
+                data-cy="Cofrestru fel gweithiwr gofal cymdeithasol"
+                >Register as a social care worker</span
+              >
             </li>
             <li>
-              <t-lang en>Apply for signatory</t-lang>
-              <t-lang cy>Gwnewch gais am lofnodwr</t-lang>
+              <span
+                is="t-span"
+                data-en="Apply for signatory"
+                data-cy="Gwnewch gais am lofnodwr"
+                >Apply for signatory</span
+              >
             </li>
             <li>
-              <t-lang en>Manage your SCW account online</t-lang>
-              <t-lang cy>Rheoli eich cyfrif SCW ar-lein</t-lang>
+              <span
+                is="t-span"
+                data-en="Manage your SCW account online"
+                data-cy="Rheoli eich cyfrif SCW ar-lein"
+                >Manage your SCW account online</span
+              >
             </li>
             <li>
-              <t-lang en>Start or further your career in social care</t-lang>
-              <t-lang cy>
-                Dechreuwch neu ymestynnwch eich gyrfa mewn gofal cymdeithasol
-              </t-lang>
+              <span
+                is="t-span"
+                data-en="Start or further your career in social care"
+                data-cy="Dechreuwch neu ymestynnwch eich gyrfa mewn gofal cymdeithasol"
+                >Start or further your career in social care</span
+              >
             </li>
           </ul>
         </section>
         <section id="form-container">
           <h2>
-            <t-lang en>Sign up to SCWonline</t-lang>
-            <t-lang cy>Cofrestrwch i SCWonline</t-lang>
+            <span
+              is="t-span"
+              data-en="Sign up to SCWonline"
+              data-cy="Cofrestrwch i SCWonline"
+              >Sign up to SCWonline</span
+            >
           </h2>
           <p>
-            <t-lang en>Please create your account</t-lang>
-            <t-lang cy>Crëwch eich cyfrif</t-lang>
+            <span
+              is="t-span"
+              data-en="Please create your account"
+              data-cy="Crëwch eich cyfrif"
+              >Please create your account</span
+            >
           </p>
           <form action="#">
             <div class="form-group">
-              <label for="title">
-                <t-lang en>Title</t-lang>
-                <t-lang cy>Teitl</t-lang>
+              <label for="title" is="t-label" data-en="Title" data-cy="Teitl">
+                Title
               </label>
               <select id="title" name="title">
                 <option
+                  is="t-option"
                   value=""
-                  data-lang-en="Select your title"
-                  data-lang-cy="Dewiswch eich teitl"
+                  data-en="Select your title"
+                  data-cy="Dewiswch eich teitl"
                 >
                   Select your title
                 </option>
@@ -431,105 +482,132 @@
                 <option value="Ms">Ms</option>
                 <option value="Mx">Mx</option>
                 <option
+                  is="t-option"
                   value="Master"
-                  data-lang-en="Master"
-                  data-lang-cy="Meistr"
+                  data-en="Master"
+                  data-cy="Meistr"
                 >
                   Master
                 </option>
               </select>
             </div>
             <div class="form-group">
-              <label for="forename">
-                <t-lang en>Forename(s)</t-lang>
-                <t-lang cy>Enw(au) cyntaf</t-lang>
+              <label
+                for="forename"
+                is="t-label"
+                data-en="Forename(s)"
+                data-cy="Enw(au) cyntaf"
+              >
+                Forename(s)
               </label>
               <input
                 id="forename"
                 name="forename"
                 type="text"
+                is="t-input"
                 placeholder="Enter your forename(s)"
-                data-placeholder-lang-en="Enter your forename(s)"
-                data-placeholder-lang-cy="Rhowch eich enw(au) cyntaf"
+                data-en="Enter your forename(s)"
+                data-cy="Rhowch eich enw(au) cyntaf"
                 required
               >
             </div>
             <div class="form-group">
-              <label for="surname">
-                <t-lang en>Surname</t-lang>
-                <t-lang cy>Cyfenw</t-lang>
+              <label
+                for="surname"
+                is="t-label"
+                data-en="Surname"
+                data-cy="Cyfenw"
+              >
+                Surname
               </label>
               <input
                 id="surname"
                 name="surname"
                 type="text"
+                is="t-input"
                 placeholder="Enter your surname"
-                data-placeholder-lang-en="Enter your surname"
-                data-placeholder-lang-cy="Rhowch eich cyfenw"
+                data-en="Enter your surname"
+                data-cy="Rhowch eich cyfenw"
                 required
               >
             </div>
             <div class="form-group">
-              <label for="email">
-                <t-lang en>Email</t-lang>
-                <t-lang cy>Ebost</t-lang>
+              <label for="email" is="t-label" data-en="Email" data-cy="Ebost">
+                Email
               </label>
               <input
                 id="email"
                 name="email"
                 type="email"
+                is="t-input"
                 placeholder="Enter your email address"
-                data-placeholder-lang-en="Enter your email address"
-                data-placeholder-lang-cy="Rhowch eich cyfeiriad e-bost"
+                data-en="Enter your email address"
+                data-cy="Rhowch eich cyfeiriad e-bost"
                 required
               >
             </div>
             <div class="form-group">
-              <label for="mobile">
-                <t-lang en>Mobile telephone number</t-lang>
-                <t-lang cy>Rhif ffôn symudol</t-lang>
+              <label
+                for="mobile"
+                is="t-label"
+                data-en="Mobile telephone number"
+                data-cy="Rhif ffôn symudol"
+              >
+                Mobile telephone number
               </label>
               <input
                 id="mobile"
                 name="mobile"
                 type="text"
+                is="t-input"
                 placeholder="Enter your mobile number"
-                data-placeholder-lang-en="Enter your mobile number"
-                data-placeholder-lang-cy="Rhowch eich rhif ffôn symudol"
+                data-en="Enter your mobile number"
+                data-cy="Rhowch eich rhif ffôn symudol"
                 required
               >
             </div>
             <div class="form-group">
-              <label for="dob">
-                <t-lang en>Date of birth</t-lang>
-                <t-lang cy>Dyddiad geni</t-lang>
+              <label
+                for="dob"
+                is="t-label"
+                data-en="Date of birth"
+                data-cy="Dyddiad geni"
+              >
+                Date of birth
               </label>
               <input id="dob" name="dob" type="date" required>
             </div>
             <div class="form-group">
-              <label for="language">
-                <t-lang en>Select your preferred language</t-lang>
-                <t-lang cy>Dewiswch eich dewis iaith</t-lang>
+              <label
+                for="language"
+                is="t-label"
+                data-en="Select your preferred language"
+                data-cy="Dewiswch eich dewis iaith"
+              >
+                Select your preferred language
               </label>
               <select id="language" name="language">
                 <option
+                  is="t-option"
                   value=""
-                  data-lang-en="Select your preferred language"
-                  data-lang-cy="Dewiswch eich dewis iaith"
+                  data-en="Select your preferred language"
+                  data-cy="Dewiswch eich dewis iaith"
                 >
                   Select your preferred language
                 </option>
                 <option
+                  is="t-option"
                   value="English"
-                  data-lang-en="English"
-                  data-lang-cy="Saesneg"
+                  data-en="English"
+                  data-cy="Saesneg"
                 >
                   English
                 </option>
                 <option
+                  is="t-option"
                   value="Welsh"
-                  data-lang-en="Welsh"
-                  data-lang-cy="Cymraeg"
+                  data-en="Welsh"
+                  data-cy="Cymraeg"
                 >
                   Welsh
                 </option>
@@ -537,9 +615,13 @@
             </div>
 
             <div class="form-group">
-              <label for="password">
-                <t-lang en>Password</t-lang>
-                <t-lang cy>Cyfrinair</t-lang>
+              <label
+                for="password"
+                is="t-label"
+                data-en="Password"
+                data-cy="Cyfrinair"
+              >
+                Password
               </label>
               <input
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
@@ -550,24 +632,33 @@
               >
             </div>
             <button type="submit">
-              <t-lang en>Sign up</t-lang>
-              <t-lang cy>Cofrestrwch</t-lang>
+              <span is="t-span" data-en="Sign up" data-cy="Cofrestrwch"
+                >Sign up</span
+              >
             </button>
           </form>
           <div id="alternative">
             <p>
-              <t-lang en>Already signed up?</t-lang>
-              <t-lang cy>Eisoes wedi cofrestru?</t-lang>
+              <span
+                is="t-span"
+                data-en="Already signed up?"
+                data-cy="Eisoes wedi cofrestru?"
+                >Already signed up?</span
+              >
             </p>
             <a href="#">
-              <t-lang en>Login here</t-lang>
-              <t-lang cy>Mewngofnodwch yma</t-lang>
+              <span is="t-span" data-en="Login here" data-cy="Mewngofnodwch yma"
+                >Login here</span
+              >
             </a>
           </div>
         </section>
       </div>
     </main>
     <script src="js/script.js"></script>
-    <script type="module" src="components/t-lang.js"></script>
+    <script type="module" src="components/t-label.js"></script>
+    <script type="module" src="components/t-input.js"></script>
+    <script type="module" src="components/t-span.js"></script>
+    <script type="module" src="components/t-option.js"></script>
   </body>
 </html>
