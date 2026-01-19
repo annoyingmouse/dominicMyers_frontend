@@ -10,6 +10,8 @@
     </title>
     <meta name="author" content="Dominic Myers">
     <script src="//unpkg.com/@ungap/custom-elements"></script>
+    <script src="js/pristine.js"></script>
+    <script type="module" https://cdn.skypack.dev/@js-temporal/polyfill'></script>
     <meta name="description" content="Social Care Wales | Welcome to SCWonline">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
@@ -20,20 +22,20 @@
       type="font/woff2"
       crossorigin
     >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonBookRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonBoldItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonBookRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonBoldItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
     <link
       rel="preload"
       href="typeface/FONTSPRINGDEMO-GibsonBold.woff2"
@@ -41,97 +43,97 @@
       type="font/woff2"
       crossorigin
     >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonBookItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonHeavyItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonLightLightItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonThinRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonThinItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
-    <link
-      rel="preload"
-      href="typeface/FONTSPRINGDEMO-GibsonSemiboldRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    >
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonBookItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonHeavyItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonLightLightItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonThinRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonThinItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
+<!--    <link-->
+<!--      rel="preload"-->
+<!--      href="typeface/FONTSPRINGDEMO-GibsonSemiboldRegular.woff2"-->
+<!--      as="font"-->
+<!--      type="font/woff2"-->
+<!--      crossorigin-->
+<!--    >-->
   </head>
   <body>
     <header>
@@ -462,15 +464,25 @@
               >Please create your account</span
             >
           </p>
-          <form action="#">
+          <form novalidate id="sign_up">
             <div class="form-group">
               <label for="title" is="t-label" data-en="Title" data-cy="Teitl">
                 Title
               </label>
-              <select id="title" name="title">
+              <select id="title" name="title" required>
                 <option
                   is="t-option"
+                  hidden
+                  data-en="Select your title"
+                  data-cy="Dewiswch eich teitl"
+                >
+                  Select your title
+                </option>
+                <option
                   value=""
+                  is="t-option"
+                  disabled="disabled"
+                  selected="true"
                   data-en="Select your title"
                   data-cy="Dewiswch eich teitl"
                 >
@@ -586,10 +598,21 @@
               >
                 Select your preferred language
               </label>
-              <select id="language" name="language">
+              <select id="language" name="language" required>
                 <option
                   is="t-option"
                   value=""
+                  hidden
+                  data-en="Select your preferred language"
+                  data-cy="Dewiswch eich dewis iaith"
+                >
+                  Select your preferred language
+                </option>
+                <option
+                  is="t-option"
+                  value=""
+                  disabled="disabled"
+                  selected="true"
                   data-en="Select your preferred language"
                   data-cy="Dewiswch eich dewis iaith"
                 >

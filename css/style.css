@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson Book";
-  src: url("typeface/FONTSPRINGDEMO-GibsonBookRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonBookRegular.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonBoldItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonBoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonBold.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson Book";
-  src: url("typeface/FONTSPRINGDEMO-GibsonBookItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonBookItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -45,7 +45,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -53,7 +53,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonHeavyItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonHeavyItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -61,7 +61,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -69,7 +69,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonLightLightItalic.woff2")
+  src: url("../typeface/FONTSPRINGDEMO-GibsonLightLightItalic.woff2")
     format("woff2");
   font-weight: 300;
   font-style: italic;
@@ -78,7 +78,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonThinRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonThinRegular.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -86,7 +86,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonLightRegular.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -94,7 +94,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumRegular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -102,7 +102,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonThinItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonThinItalic.woff2") format("woff2");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -110,7 +110,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonMediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -118,7 +118,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonHeavyRegular.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -126,7 +126,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2") format("woff2");
+  src: url("../typeface/FONTSPRINGDEMO-GibsonSemiboldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -134,7 +134,7 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Gibson";
-  src: url("typeface/FONTSPRINGDEMO-GibsonSemiboldRegular.woff2")
+  src: url("../typeface/FONTSPRINGDEMO-GibsonSemiboldRegular.woff2")
     format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -180,7 +180,8 @@ img {
 html {
   font-size: 100%;
   body {
-    font-family: "FONTSPRING DEMO - Gibson", Arial, Helvetica, sans-serif;
+    /*font-family: "FONTSPRING DEMO - Gibson", Arial, Helvetica, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -377,7 +378,7 @@ html {
             li {
               padding: 0.75rem 0 0.75rem 3rem;
               font-size: 1.2rem;
-              font-weight: bold;
+              font-weight: 600;
               background: url(data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M18%2033C26.2843%2033%2033%2026.2843%2033%2018C33%209.71573%2026.2843%203%2018%203C9.71573%203%203%209.71573%203%2018C3%2026.2843%209.71573%2033%2018%2033ZM25.5001%2015.6213C26.0859%2015.0355%2026.0859%2014.0858%2025.5001%2013.5C24.9144%2012.9142%2023.9646%2012.9142%2023.3788%2013.5L15.5242%2021.3546L12.0784%2017.3345C11.5392%2016.7055%2010.5923%2016.6326%209.96329%2017.1718C9.3343%2017.7109%209.26146%2018.6578%209.8006%2019.2868L14.3006%2024.5368C14.5725%2024.8541%2014.9644%2025.0435%2015.3819%2025.0595C15.7994%2025.0756%2016.2047%2024.9167%2016.5001%2024.6213L25.5001%2015.6213Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E)
                 no-repeat left center;
             }
@@ -421,7 +422,7 @@ html {
               margin: 0 0.5rem 0 0;
             }
             a {
-              font-weight: bold;
+              font-weight: 500;
               color: var(--button-bg-colour);
             }
           }
@@ -554,6 +555,18 @@ html {
     background-color: var(--input-bg-colour);
     font-size: 1rem;
   }
+  select:not(:valid) {
+    opacity: 0.5;
+  }
+  .pristine-error {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: red;
+  }
+  &.has-danger {
+    border-bottom: 2px solid red;
+    padding-bottom: 0.05rem;
+  }
 }
 
 /* Hiding class, making content visible only to screen readers but not visually */
@@ -567,4 +580,8 @@ html {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+strong {
+  font-weight: 600;
 }
